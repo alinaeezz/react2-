@@ -1,13 +1,14 @@
+// Импорты библиотек и стилей
 import React from 'react'
+import './error-indicator.css' // Стили для компонента
+import icon from './death-star.png' // Иконка для визуализации ошибки
 
-import './error-indicator.css'
-import icon from './death-star.png'
-
+// Функциональный компонент для отображения информации об ошибке
 const ErrorIndicator = () => {
     return (
-        <div className="error-indicator">
-            <img src={icon} alt="error icon"/>
-            <span className="boom">BOOM!</span>
+        <div className="error-indicator"> {/* Основной контейнер для отображения информации об ошибке */}
+            <img src={icon} alt="error icon" /> {/* Иконка, отображающая визуальный индикатор ошибки */}
+            <span className="boom">BOOM!</span> {/* Текст-индикатор ошибки */}
             <span>
                 something has gone terribly wrong
             </span>
@@ -18,4 +19,5 @@ const ErrorIndicator = () => {
     )
 }
 
+// Экспорт компонента
 export default ErrorIndicator

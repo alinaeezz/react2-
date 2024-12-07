@@ -1,18 +1,20 @@
-import PersonDetails from "./person-details"
-import PlanetDetails from "./planet-details"
-import StarshipDetails from "./starship-details"
+import PersonDetails from "./person-details" // Импортили компонент для отображения информации о персонажах
+import PlanetDetails from "./planet-details" // Импортили компонент для отображения информации о планетах
+import StarshipDetails from "./starship-details" // Импортили компонент для отображения информации о звездолетах
 
+// Импортили списки для отображения данных о персонажах, планетах и звездолетах
 import {
     PersonList,
     PlanetList,
     StarshipList
-} from "./item-lists"
+} from "./item-lists" // Списки с данными, которые будут использоваться для навигации по элементам
 
+// Экспортируем компоненты и списки для их общего использования в других частях приложения
 export {
-    PersonDetails,
-    PlanetDetails,
-    StarshipDetails,
-    PersonList,
-    PlanetList,
-    StarshipList
+    PersonDetails, // Экспорт информации о персонажах
+    PlanetDetails, // Экспорт информации о планетах
+    StarshipDetails, // Экспорт информации о звездолетах
+    PersonList, // Экспорт списка персон
+    PlanetList, // Экспорт списка планет
+    StarshipList // Экспорт списка звездолетов
 }

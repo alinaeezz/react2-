@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react' // Импортируем React
+import intro from './starship-intro.jpg' // Импортируем изображение для приветственного блока
+import './starship-intro.css' // Подключаем CSS-стили для стилизации компонента
 
-import intro from './starship-intro.jpg'
-import './starship-intro.css'
-
+// Компонент StarshipIntro: отвечает за визуальное представление интро для страницы со звездолетами
 const StarshipIntro = () => {
     return (
-        <div className="intro-img">
-            <div className="ii">
-                <img src={intro} alt="Starships"/>
+        <div className="intro-img"> {/* Основной контейнер для изображения */}
+            <div className="ii"> {/* Вложенный контейнер для стилизации */}
+                <img src={intro} alt="Starships" /> {/* Отображаем изображение */}
             </div>
         </div>
     )
 }
 
-export default StarshipIntro
+export default StarshipIntro // Экспортируем компонент для использования в других частях приложения
